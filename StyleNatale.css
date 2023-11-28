@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+
+body {
+    text-align: center;
+    background: linear-gradient(to right, red, darkred);
+}
+
+h1 {
+    color: cyan;
+    text-shadow: 2px 2px 4px blue;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: 'Barlow', sans-serif;
+}
+
+table {
+    background-image: url(Immagini_Natale/Natale.gif);
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 30px;
+}
+
+
+td {
+    margin: 20px;
+    text-shadow: 2px 2px 4px white;
+    font-weight: bold;
+    background-image: linear-gradient(red, darkred);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 50%;
+    transition: background-size 300ms ease-in-out;
+}
+
+td:hover {
+    background-size: 100% 25%;
+}
+
+/**colore riga alternato pari**/
+td:nth-child(2n) {
+    color: yellow;
+}
+
+/**colore riga alternato dispari**/
+td:nth-child(2n + 3) {
+    color: cyan;
+}
+
+/***colore prima linea tabella**/
+td:nth-child(-n + 1) {
+    color: cyan;
+}
+
+a:nth-child(2n) {
+    color: yellow;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**colore riga alternato dispari**/
+a:nth-child(2n + 3) {
+    color: cyan;
+}
+
+/***colore prima linea tabella**/
+a:nth-child(-n + 1) {
+    color: cyan;
+}
+
+img {
+    width: auto;
+    height: 400px;
+    border-radius: 50px;
+}
+
+.freccia {
+    width: auto;
+    height: 50px;
+}
