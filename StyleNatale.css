@@ -33,50 +33,29 @@ td {
     transition: background-size 300ms ease-in-out;
 }
 
-td:hover {
+td:hover,
+.freccia:hover {
     background-size: 100% 25%;
-}
-
-/**colore riga alternato pari**/
-td:nth-child(2n) {
-    color: yellow;
-}
-
-/**colore riga alternato dispari**/
-td:nth-child(2n + 3) {
-    color: cyan;
-}
-
-/***colore prima linea tabella**/
-td:nth-child(-n + 1) {
-    color: cyan;
-}
-
-a:nth-child(2n) {
-    color: yellow;
 }
 
 a {
     text-decoration: none;
-}
-
-/**colore riga alternato dispari**/
-a:nth-child(2n + 3) {
-    color: cyan;
-}
-
-/***colore prima linea tabella**/
-a:nth-child(-n + 1) {
-    color: cyan;
+    color: red;
 }
 
 img {
-    width: auto;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     border-radius: 50px;
 }
 
 .freccia {
     width: auto;
     height: 50px;
+
+    background-image: linear-gradient(cyan, darkcyan);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 0% 50%;
+    transition: background-size 300ms ease-in-out;
 }
