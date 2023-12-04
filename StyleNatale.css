@@ -9,7 +9,7 @@ h1 {
     color: cyan;
     text-shadow: 2px 2px 4px blue;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -44,8 +44,8 @@ a {
 }
 
 img {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border-radius: 50px;
 }
 
